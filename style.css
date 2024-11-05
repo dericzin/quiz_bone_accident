@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #868686;
     margin: 0;
     padding: 20px;
     color: #333;
 }
 
 .quiz-container {
-    background-color: #fff;
+    background-color: #C0C0C0;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -26,7 +26,9 @@ select {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
+    background-color: #D3D3D3;
+    color: #333;
 }
 
 button {
@@ -57,10 +59,12 @@ label {
 }
 
 input[type="text"] {
-    width: 100%; /* Ajusta a largura para 100% */
+    width: 100%;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
+    background-color: #D3D3D3; /* Fundo das caixas de texto condizente com o layout */
+    color: #333; /* Cor do texto */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura total */
 }
 
