@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Acidentes Ósseos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="selection-container">
+        <h1>Escolha o Osso</h1>
+        <select id="bone-select">
+            <option value="" disabled selected>Selecione um osso</option>
+            <option value="osso1">Coxal Equino</option>
+            <option value="osso2">Osso 2</option>
+            <option value="osso3">Osso 3</option>
+            <!-- Adicione mais opções conforme necessário -->
+        </select>
+        <button onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+        <h1 id="quiz-title">Quiz de Acidentes Ósseos</h1>
+        <img src="osso.jpg" alt="Osso" id="osso-image">
+        <div id="questions"></div>
+        <button onclick="checkAnswers()">Enviar Respostas</button>
+        <button onclick="goBack()">Voltar</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
