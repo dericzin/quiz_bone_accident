@@ -179,36 +179,35 @@ const quizzes = {
 
         ]
     },
+
     osso9: {
-        name: "Atlas (C1) Equino.", // Nome do osso
-        image: "atlas_c1_equino.png", // Substitua com a imagem correta
+        name: "Atlas (C1) Equino.",
+        image: "atlas_c1_equino.png",
         questions: [
-            { question: "1. Nome do acidente ósseo 1?", answer: "Forame Vertebral" },
-            { question: "2. Nome do acidente ósseo 2?", answer: "Arco Vertebral" },
-            { question: "3. Nome do acidente ósseo 3?", answer: "Processo Transverso (Asa do Atlas)" },
-            { question: "4. Nome do acidente ósseo 4?", answer: "Forame Vertebral Lateral" },
-            { question: "5. Nome do acidente ósseo 5?", answer: "Forame Alar do Atlas" },
-            { question: "6. Nome do acidente ósseo 6?", answer: "Forame Transverso" },
-            { question: "7. Nome do acidente ósseo 7?", answer: "Face Articular Cranial do Atlas" },
-            { question: "8. Nome do acidente ósseo 8?", answer: "Fossa do Atlas" }
+            { question: "1. Nome do acidente ósseo 1?", answer: ["Forame Vertebral"] },
+            { question: "2. Nome do acidente ósseo 2?", answer: ["Arco Vertebral"] },
+            { question: "3. Nome do acidente ósseo 3?", answer: ["Processo Transverso", "Asa do Atlas"] },
+            { question: "4. Nome do acidente ósseo 4?", answer: ["Forame Vertebral Lateral"] },
+            { question: "5. Nome do acidente ósseo 5?", answer: ["Forame Alar do Atlas"] },
+            { question: "6. Nome do acidente ósseo 6?", answer: ["Forame Transverso"] },
+            { question: "7. Nome do acidente ósseo 7?", answer: ["Face Articular Cranial do Atlas"] },
+            { question: "8. Nome do acidente ósseo 8?", answer: ["Fossa do Atlas"] }
         ]
     },
     osso10: {
-        name: "Axis (C2) Equino.", // Nome do osso
-        image: "axis_c2_equino.png", // Substitua com a imagem correta
+        name: "Axis (C2) Equino.",
+        image: "axis_c2_equino.png",
         questions: [
-            { question: "1. Nome do acidente ósseo 1?", answer: "Forame Vertebral" },
-            { question: "2. Nome do acidente ósseo 2?", answer: "Arco Vertebral" },
-            { question: "3. Nome do acidente ósseo 3?", answer: "Processo Transverso (Asa do Atlas)" },
-            { question: "4. Nome do acidente ósseo 4?", answer: "Forame Vertebral Lateral" },
-            { question: "5. Nome do acidente ósseo 5?", answer: "Forame Alar do Atlas" },
-            { question: "6. Nome do acidente ósseo 6?", answer: "Forame Transverso" },
-            { question: "7. Nome do acidente ósseo 7?", answer: "Face Articular Cranial do Atlas" },
-            { question: "8. Nome do acidente ósseo 8?", answer: "Fossa do Atlas" }
-
+            { question: "1. Nome do acidente ósseo 1?", answer: ["Forame Vertebral"] },
+            { question: "2. Nome do acidente ósseo 2?", answer: ["Arco Vertebral"] },
+            { question: "3. Nome do acidente ósseo 3?", answer: ["Processo Transverso", "Asa do Atlas"] },
+            { question: "4. Nome do acidente ósseo 4?", answer: ["Forame Vertebral Lateral"] },
+            { question: "5. Nome do acidente ósseo 5?", answer: ["Forame Alar do Atlas"] },
+            { question: "6. Nome do acidente ósseo 6?", answer: ["Forame Transverso"] },
+            { question: "7. Nome do acidente ósseo 7?", answer: ["Face Articular Cranial do Atlas"] },
+            { question: "8. Nome do acidente ósseo 8?", answer: ["Fossa do Atlas"] }
         ]
     }
-
 };
 
 function normalizeString(str) {
@@ -241,10 +240,9 @@ function startQuiz() {
 
 function checkAnswers() {
     const selectedBone = document.getElementById("bone-select").value;
-    const correctAnswers = quizzes[selectedBone].questions.map(q => ({
-        normalized: normalizeString(q.answer),
-        original: q.answer
-    }));
+    const correctAnswers = quizzes[selectedBone].questions.map(q => 
+        q.answer.map(answer => normalizeString(answer))
+    );
 
     const userAnswers = [];
     for (let i = 0; i < correctAnswers.length; i++) {
@@ -255,11 +253,11 @@ function checkAnswers() {
     let resultMessage = `<h2>Resultados:</h2><ul class="results-list">`;
 
     userAnswers.forEach((answer, index) => {
-        if (answer === correctAnswers[index].normalized) {
+        if (correctAnswers[index].includes(answer)) {
             score++;
             resultMessage += `<li>Pergunta ${index + 1}: Correta!</li>`;
         } else {
-            resultMessage += `<li>Pergunta ${index + 1}: Errada! Resposta correta: ${correctAnswers[index].original}</li>`;
+            resultMessage += `<li>Pergunta ${index + 1}: Errada! Resposta correta: ${quizzes[selectedBone].questions[index].answer.join(" ou ")}</li>`;
         }
     });
 
@@ -271,25 +269,20 @@ function checkAnswers() {
 }
 
 function retryQuiz() {
-    // Limpa o resultado e exibe novamente o botão "Enviar Respostas"
     document.getElementById("result").innerHTML = '';
     document.getElementById("submit-button").style.display = "inline-block";
 
-    // Limpa as respostas dos campos de texto
     const inputs = document.querySelectorAll("#questions input[type='text']");
     inputs.forEach(input => input.value = "");
 
-    // Volta ao topo da página
     window.scrollTo(0, 0);
 }
 
 function goBack() {
-    // Limpa as respostas anteriores e retorna à tela de seleção
     document.getElementById("quiz-container").style.display = "none";
     document.getElementById("selection-container").style.display = "block";
     document.getElementById("result").innerHTML = ''; // Limpa resultados
-    document.getElementById("bone-select").selectedIndex = 0; // Reseta a seleção
+    document.getElementById("bone-select").selectedIndex = 0;
 
-    // Exibe novamente o botão "Enviar Respostas" caso tenha sido ocultado
     document.getElementById("submit-button").style.display = "inline-block";
 }
