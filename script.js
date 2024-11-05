@@ -198,14 +198,16 @@ const quizzes = {
         name: "Axis (C2) Equino.",
         image: "axis_c2_equino.png",
         questions: [
-            { question: "1. Nome do acidente ósseo 1?", answer: ["Forame Vertebral"] },
-            { question: "2. Nome do acidente ósseo 2?", answer: ["Arco Vertebral"] },
-            { question: "3. Nome do acidente ósseo 3?", answer: ["Processo Transverso", "Asa do Atlas"] },
-            { question: "4. Nome do acidente ósseo 4?", answer: ["Forame Vertebral Lateral"] },
-            { question: "5. Nome do acidente ósseo 5?", answer: ["Forame Alar do Atlas"] },
-            { question: "6. Nome do acidente ósseo 6?", answer: ["Forame Transverso"] },
-            { question: "7. Nome do acidente ósseo 7?", answer: ["Face Articular Cranial do Atlas"] },
-            { question: "8. Nome do acidente ósseo 8?", answer: ["Fossa do Atlas"] }
+            { question: "1. Nome do acidente ósseo 9?", answer: "Dente do Áxis" },
+            { question: "2. Nome do acidente ósseo 10?", answer: "Processo Articular Cranial" },
+            { question: "3. Nome do acidente ósseo 11?", answer: "Processo Articular Caudal" },
+            { question: "4. Nome do acidente ósseo 12?", answer: "Corpo Vertebral" },
+            { question: "5. Nome do acidente ósseo 13?", answer: "Processo Espinhoso" },
+            { question: "6. Nome do acidente ósseo 14?", answer: "Forame Vertebral" },
+            { question: "7. Nome do acidente ósseo 15?", answer: "Processo Transverso" },
+            { question: "8. Nome do acidente ósseo 16?", answer: "Forame Vertebral Lateral" },
+            { question: "9. Nome do acidente ósseo 17?", answer: "Forame Transverso" }  
+        
         ]
     }
 };
