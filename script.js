@@ -51,24 +51,6 @@ const quizzes = {
         ]
     },
     osso3: {
-        name: "Crânio Bovino - Lateral", // Nome do osso
-        image: "cranio_bovino_lateral.png", // Substitua com a imagem correta
-        questions: [
-            { question: "1. Nome do osso número 1?", answer: "Osso Incisivo" },
-            { question: "2. Nome do osso número 2?", answer: "Osso Nasal" },
-            { question: "3. Nome do osso número 3?", answer: "Osso Maxilar" },
-            { question: "4. Nome do osso número 4?", answer: "Osso Lacrimal" },
-            { question: "5. Nome do osso número 5?", answer: "Osso Zigomático" },
-            { question: "6. Nome do osso número 6?", answer: "Osso Frontal" },
-            { question: "7. Nome do osso número 7?", answer: "Osso Parietal" },
-            { question: "8. Nome do osso número 8?", answer: "Osso Interparietal" },
-            { question: "9. Nome do osso número 9?", answer: "Osso Temporal" },
-            { question: "10. Nome do osso número 10?", answer: "Osso Occipital" },
-            { question: "11. Nome do osso número 11?", answer: "Mandíbula" },
-            { question: "12. Nome do osso número 12?", answer: "Osso Palatino" },
-        ]
-    },
-    osso4: {
         name: "Crânio Equino - Dorsal", // Nome do osso
         image: "cranio_equino_dorsal.png", // Substitua com a imagem correta
         questions: [
@@ -86,7 +68,7 @@ const quizzes = {
             { question: "12. Nome do acidente ósseo 53?", answer: "Crista Nucal" }
         ]
     },
-    osso5: {
+    osso4: {
         name: "Crânio Equino - Ventral", // Nome do osso
         image: "cranio_equino_ventral.png", // Substitua com a imagem correta
         questions: [
@@ -123,6 +105,38 @@ const quizzes = {
             { question: "31. Nome do acidente ósseo 57?", answer: "Parte Basilar do Occipital" },
             { question: "32. Nome do acidente ósseo 58?", answer: "Canal do Nervo Hipoglosso" }
         ]
+    },
+    osso5: {
+        name: "Crânio Bovino - Lateral", // Nome do osso
+        image: "cranio_bovino_lateral.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do osso número 1?", answer: "Osso Incisivo" },
+            { question: "2. Nome do osso número 2?", answer: "Osso Nasal" },
+            { question: "3. Nome do osso número 3?", answer: "Osso Maxilar" },
+            { question: "4. Nome do osso número 4?", answer: "Osso Lacrimal" },
+            { question: "5. Nome do osso número 5?", answer: "Osso Zigomático" },
+            { question: "6. Nome do osso número 6?", answer: "Osso Frontal" },
+            { question: "7. Nome do osso número 7?", answer: "Osso Parietal" },
+            { question: "8. Nome do osso número 8?", answer: "Osso Interparietal" },
+            { question: "9. Nome do osso número 9?", answer: "Osso Temporal" },
+            { question: "10. Nome do osso número 10?", answer: "Osso Occipital" },
+            { question: "11. Nome do osso número 11?", answer: "Mandíbula" },
+            { question: "12. Nome do osso número 12?", answer: "Osso Palatino" },
+        ]
+    },
+    osso6: {
+        name: "Mândibula Equino - Lateral", // Nome do osso
+        image: "mandibula_equino_lateral.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 59?", answer: "Corpo da Mandíbula" },
+            { question: "2. Nome do acidente ósseo 60?", answer: "Forame Mentoniano" },
+            { question: "3. Nome do acidente ósseo 61?", answer: "Incisura Vascular" },
+            { question: "4. Nome do acidente ósseo 62?", answer: "Ângulo da Mandíbula" },
+            { question: "5. Nome do acidente ósseo 63?", answer: "Ramo da Mandíbula" },
+            { question: "6. Nome do acidente ósseo 64?", answer: "Forame Mandibular" },
+            { question: "7. Nome do acidente ósseo 65?", answer: "Processo Condilar da Mandíbula" },
+            { question: "8. Nome do acidente ósseo 66?", answer: "Processo Coronoide da Mandíbula" }
+        ]
     }
 };
 
@@ -138,7 +152,7 @@ function startQuiz() {
 
         const quizData = quizzes[selectedBone];
         document.getElementById("osso-image").src = quizData.image;
-        document.getElementById("quiz-title").innerText = quizData.name; // Atualiza o título
+        document.getElementById("quiz-title").innerText = quizData.name;
 
         const questionsDiv = document.getElementById("questions");
         questionsDiv.innerHTML = ''; // Limpa perguntas anteriores
@@ -151,6 +165,8 @@ function startQuiz() {
             `;
             questionsDiv.appendChild(questionDiv);
         });
+
+        window.scrollTo(0, 0); // Rola a página para o topo
     }
 }
 
@@ -183,9 +199,15 @@ function checkAnswers() {
 }
 
 function goBack() {
-    // Limpa as respostas anteriores e retorna à tela de seleção
     document.getElementById("quiz-container").style.display = "none";
     document.getElementById("selection-container").style.display = "block";
+    document.getElementById("result").innerHTML = ''; 
+    document.getElementById("bone-select").selectedIndex = 0; 
+    window.scrollTo(0, 0); // Rola a página para o topo
+}
+function retryQuiz() {
     document.getElementById("result").innerHTML = ''; // Limpa resultados
-    document.getElementById("bone-select").selectedIndex = 0; // Reseta a seleção
+    const answers = document.querySelectorAll("#questions input[type='text']");
+    answers.forEach(input => input.value = ''); // Limpa todas as respostas
+    window.scrollTo(0, 0); // Rola a página para o topo
 }

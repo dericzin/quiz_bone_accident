@@ -13,20 +13,24 @@
             <option value="" disabled selected>Selecione um osso</option>
             <option value="osso1">Coxal Equino</option>
             <option value="osso2">Crânio Equino - Lateral</option>
-            <option value="osso3">Crânio Bovino - Lateral</option>
-            <option value="osso4">Crânio Equino - Dorsal</option>
-            <option value="osso5">Crânio Equino - Ventral</option>
-            <!-- Adicione mais opções conforme necessário -->
+            <option value="osso3">Crânio Equino - Dorsal</option>
+            <option value="osso4">Crânio Equino - Ventral</option>
+            <option value="osso5">Crânio Bovino - Lateral</option>
+            <option value="osso6">Mândibula Equino - Lateral</option>
         </select>
         <button onclick="startQuiz()">Iniciar Quiz</button>
     </div>
 
     <div class="quiz-container" id="quiz-container" style="display: none;">
-        <h1 id="quiz-title">Quiz de Acidentes Ósseos</h1>
+        <div class="header-container">
+            <h1 id="quiz-title">Quiz de Acidentes Ósseos</h1>
+            <button class="back-button" onclick="goBack()">Voltar</button>
+        </div>
         <img src="osso.jpg" alt="Osso" id="osso-image">
         <div id="questions"></div>
         <button onclick="checkAnswers()">Enviar Respostas</button>
         <button onclick="goBack()">Voltar</button>
+        <button onclick="retryQuiz()">Tentar Novamente</button>
         <div id="result"></div>
     </div>
 
