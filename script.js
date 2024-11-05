@@ -137,7 +137,78 @@ const quizzes = {
             { question: "7. Nome do acidente ósseo 65?", answer: "Processo Condilar da Mandíbula" },
             { question: "8. Nome do acidente ósseo 66?", answer: "Processo Coronoide da Mandíbula" }
         ]
+    },
+    osso7: {
+        name: "Escápula Esquerda Eq.", // Nome do osso
+        image: "escapula_esq_equino.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 01?", answer: "Cartilagem da Escápula" },
+            { question: "2. Nome do acidente ósseo 02?", answer: "Espinha da Escápula" },
+            { question: "3. Nome do acidente ósseo 03?", answer: "Fossa Infraespinhal" },
+            { question: "4. Nome do acidente ósseo 04?", answer: "Fossa Supraespinhal" },
+            { question: "5. Nome do acidente ósseo 05?", answer: "Face Serrátil" },
+            { question: "6. Nome do acidente ósseo 06?", answer: "Fossa Subescapular" },
+            { question: "7. Nome do acidente ósseo 07?", answer: "Colo da Escápula" },
+            { question: "8. Nome do acidente ósseo 08?", answer: "Forame Nutrício" },
+            { question: "9. Nome do acidente ósseo 09?", answer: "Cavidade Glenoide" },
+            { question: "10. Nome do acidente ósseo 10?", answer: "Tubérculo Supraglenoide" },
+            { question: "11. Nome do acidente ósseo 11?", answer: "Processo Coracóide" }
+        ]
+    },
+    osso8: {
+        name: "Úmero Esquerdo Eq.", // Nome do osso
+        image: "umero_esq_equino.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 12?", answer: "Cabeça do Úmero" },
+            { question: "2. Nome do acidente ósseo 13?", answer: "Colo do Úmero" },
+            { question: "3. Nome do acidente ósseo 14?", answer: "Tubérculo Maior" },
+            { question: "4. Nome do acidente ósseo 15?", answer: "Tubérculo Menor" },
+            { question: "5. Nome do acidente ósseo 16?", answer: "Tubérculo Intermédio" },
+            { question: "6. Nome do acidente ósseo 17?", answer: "Sulco Intertubercular" },
+            { question: "7. Nome do acidente ósseo 18?", answer: "Tuberosidade Deltoide" },
+            { question: "8. Nome do acidente ósseo 19?", answer: "Tuberosidade Redonda Maior" },
+            { question: "9. Nome do acidente ósseo 20?", answer: "Corpo do Úmero" },
+            { question: "10. Nome do acidente ósseo 21?", answer: "Forame Nutrício" },
+            { question: "11. Nome do acidente ósseo 22?", answer: "Fossa do Olécrano" },
+            { question: "12. Nome do acidente ósseo 23?", answer: "Fossa Radial" },
+            { question: "13. Nome do acidente ósseo 24?", answer: "Tróclea do Úmero" },
+            { question: "14. Nome do acidente ósseo 25?", answer: "Côndilo Medial" },
+            { question: "15. Nome do acidente ósseo 26?", answer: "Côndilo Lateral" },
+            { question: "16. Nome do acidente ósseo 27?", answer: "Epicôndilo Medial do Úmero" },
+            { question: "17. Nome do acidente ósseo 28?", answer: "Epicôndilo Lateral do Úmero" }
+
+        ]
+    },
+    osso9: {
+        name: "Atlas (C1) Equino.", // Nome do osso
+        image: "atlas_c1_equino.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 1?", answer: "Forame Vertebral" },
+            { question: "2. Nome do acidente ósseo 2?", answer: "Arco Vertebral" },
+            { question: "3. Nome do acidente ósseo 3?", answer: "Processo Transverso (Asa do Atlas)" },
+            { question: "4. Nome do acidente ósseo 4?", answer: "Forame Vertebral Lateral" },
+            { question: "5. Nome do acidente ósseo 5?", answer: "Forame Alar do Atlas" },
+            { question: "6. Nome do acidente ósseo 6?", answer: "Forame Transverso" },
+            { question: "7. Nome do acidente ósseo 7?", answer: "Face Articular Cranial do Atlas" },
+            { question: "8. Nome do acidente ósseo 8?", answer: "Fossa do Atlas" }
+        ]
+    },
+    osso10: {
+        name: "Axis (C2) Equino.", // Nome do osso
+        image: "axis_c2_equino.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 1?", answer: "Forame Vertebral" },
+            { question: "2. Nome do acidente ósseo 2?", answer: "Arco Vertebral" },
+            { question: "3. Nome do acidente ósseo 3?", answer: "Processo Transverso (Asa do Atlas)" },
+            { question: "4. Nome do acidente ósseo 4?", answer: "Forame Vertebral Lateral" },
+            { question: "5. Nome do acidente ósseo 5?", answer: "Forame Alar do Atlas" },
+            { question: "6. Nome do acidente ósseo 6?", answer: "Forame Transverso" },
+            { question: "7. Nome do acidente ósseo 7?", answer: "Face Articular Cranial do Atlas" },
+            { question: "8. Nome do acidente ósseo 8?", answer: "Fossa do Atlas" }
+
+        ]
     }
+
 };
 
 function normalizeString(str) {
