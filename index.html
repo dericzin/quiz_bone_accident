@@ -24,12 +24,12 @@
     <div class="quiz-container" id="quiz-container" style="display: none;">
         <div class="header">
             <h1 id="quiz-title">Quiz de Acidentes Ósseos</h1>
-            <button class="back-button" onclick="goBack()">Voltar</button>
+            <button onclick="goBack()">Voltar</button>
         </div>
         <img src="osso.jpg" alt="Osso" id="osso-image">
         <div id="questions"></div>
         <button id="submit-button" onclick="checkAnswers()">Enviar Respostas</button>
-        <button onclick="goBack()">Voltar</button>
+        <button class="back-button" onclick="goBack()">Voltar</button>
         <button onclick="retryQuiz()">Tentar Novamente</button>
         <div id="result"></div>
     </div>
