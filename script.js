@@ -107,7 +107,7 @@ const quizzes = {
         ]
     },
     osso5: {
-        name: "Crânio Bovino - Lateral", // Nome do osso
+        name: "Ossos do crânio Eq. Lat.", // Nome do osso
         image: "cranio_bovino_lateral.png", // Substitua com a imagem correta
         questions: [
             { question: "1. Nome do osso número 1?", answer: "Osso Incisivo" },
@@ -165,8 +165,6 @@ function startQuiz() {
             `;
             questionsDiv.appendChild(questionDiv);
         });
-
-        window.scrollTo(0, 0); // Rola a página para o topo
     }
 }
 
@@ -183,31 +181,44 @@ function checkAnswers() {
     }
 
     let score = 0;
-    let resultMessage = "Resultados:<br>";
+    let resultMessage = `<h2>Resultados:</h2><ul class="results-list">`;
 
     userAnswers.forEach((answer, index) => {
         if (answer === correctAnswers[index].normalized) {
             score++;
-            resultMessage += `Pergunta ${index + 1}: Correta!<br>`;
+            resultMessage += `<li>Pergunta ${index + 1}: Correta!</li>`;
         } else {
-            resultMessage += `Pergunta ${index + 1}: Errada! Resposta correta: ${correctAnswers[index].original}<br>`;
+            resultMessage += `<li>Pergunta ${index + 1}: Errada! Resposta correta: ${correctAnswers[index].original}</li>`;
         }
     });
 
-    resultMessage += `<strong>Você acertou ${score} de ${correctAnswers.length} perguntas!</strong>`;
+    resultMessage += `</ul><strong>Você acertou ${score} de ${correctAnswers.length} perguntas!</strong>`;
     document.getElementById("result").innerHTML = resultMessage;
+
+    // Ocultar o botão "Enviar Respostas" após mostrar o resultado
+    document.getElementById("submit-button").style.display = "none";
+}
+
+function retryQuiz() {
+    // Limpa o resultado e exibe novamente o botão "Enviar Respostas"
+    document.getElementById("result").innerHTML = '';
+    document.getElementById("submit-button").style.display = "inline-block";
+
+    // Limpa as respostas dos campos de texto
+    const inputs = document.querySelectorAll("#questions input[type='text']");
+    inputs.forEach(input => input.value = "");
+
+    // Volta ao topo da página
+    window.scrollTo(0, 0);
 }
 
 function goBack() {
+    // Limpa as respostas anteriores e retorna à tela de seleção
     document.getElementById("quiz-container").style.display = "none";
     document.getElementById("selection-container").style.display = "block";
-    document.getElementById("result").innerHTML = ''; 
-    document.getElementById("bone-select").selectedIndex = 0; 
-    window.scrollTo(0, 0); // Rola a página para o topo
-}
-function retryQuiz() {
     document.getElementById("result").innerHTML = ''; // Limpa resultados
-    const answers = document.querySelectorAll("#questions input[type='text']");
-    answers.forEach(input => input.value = ''); // Limpa todas as respostas
-    window.scrollTo(0, 0); // Rola a página para o topo
+    document.getElementById("bone-select").selectedIndex = 0; // Reseta a seleção
+
+    // Exibe novamente o botão "Enviar Respostas" caso tenha sido ocultado
+    document.getElementById("submit-button").style.display = "inline-block";
 }
