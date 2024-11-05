@@ -207,7 +207,27 @@ const quizzes = {
             { question: "8. Nome do acidente ósseo 16?", answer: ["Forame Vertebral Lateral"] },
             { question: "9. Nome do acidente ósseo 17?", answer: ["Forame Transverso"] }
         ]
+    },
+    osso11: {
+        name: "Ulna e Rádio", // Nome do osso
+        image: "radio_ulna.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 29?", answer: ["Olécrano"] },
+            { question: "2. Nome do acidente ósseo 30?", answer: ["Tuberosidade do Olécrano"] },
+            { question: "3. Nome do acidente ósseo 31?", answer: ["Processo Ancôneo da Ulna"] },
+            { question: "4. Nome do acidente ósseo 32?", answer: ["Incisura Troclear"] },
+            { question: "5. Nome do acidente ósseo 33?", answer: ["Tuberosidade do Rádio"] },
+            { question: "6. Nome do acidente ósseo 34?", answer: ["Cabeça do Rádio"] },
+            { question: "7. Nome do acidente ósseo 35?", answer: ["Espaço Interósseo"] },
+            { question: "8. Nome do acidente ósseo 36?", answer: ["Corpo da Ulna"] },
+            { question: "9. Nome do acidente ósseo 37?", answer: ["Corpo do Rádio"] },
+            { question: "10. Nome do acidente ósseo 38?", answer: ["Crista Transversa"] },
+            { question: "11. Nome do acidente ósseo 39?", answer: ["Tróclea do Rádio"] },
+            { question: "12. Nome do acidente ósseo 40?", answer: ["Processo Estilóideo Medial"] },
+            { question: "13. Nome do acidente ósseo 41?", answer: ["Processo Estilóideo Lateral"] }
+        ]
     }
+    
 };
 
 function normalizeString(str) {
