@@ -274,18 +274,18 @@ const quizzes = {
         name: "Fêmur", // Nome do osso
         image: "femur.png", // Substitua com a imagem correta
         questions: [
-            { question: "1. Nome do acidente ósseo 20?", answer: "Cabeça do Fêmur" },
-            { question: "2. Nome do acidente ósseo 21?", answer: "Fóvea do Fêmur" },
-            { question: "3. Nome do acidente ósseo 22?", answer: "Trocânter Maior" },
-            { question: "4. Nome do acidente ósseo 23?", answer: "Trocânter Menor" },
-            { question: "5. Nome do acidente ósseo 24?", answer: "Terceiro Trocânter" },
-            { question: "6. Nome do acidente ósseo 25?", answer: "Fossa Supracondilar" },
-            { question: "7. Nome do acidente ósseo 26?", answer: "Côndilo Lateral do Fêmur" },
-            { question: "8. Nome do acidente ósseo 27?", answer: "Côndilo Medial do Fêmur" },
-            { question: "9. Nome do acidente ósseo 28?", answer: "Fossa Intercondilar" },
-            { question: "10. Nome do acidente ósseo 29?", answer: "Epicôndilo Lateral do Fêmur" },
-            { question: "11. Nome do acidente ósseo 30?", answer: "Epicôndilo Medial do Fêmur" },
-            { question: "12. Nome do acidente ósseo 31?", answer: "Tróclea do Fêmur" }
+            { question: "1. Nome do acidente ósseo 20?", answer: ["Cabeça do Fêmur"] },
+            { question: "2. Nome do acidente ósseo 21?", answer: ["Fóvea do Fêmur"]},
+            { question: "3. Nome do acidente ósseo 22?", answer: ["Trocânter Maior"] },
+            { question: "4. Nome do acidente ósseo 23?", answer: ["Trocânter Menor" ]},
+            { question: "5. Nome do acidente ósseo 24?", answer: ["Terceiro Trocânter"] },
+            { question: "6. Nome do acidente ósseo 25?", answer: ["Fossa Supracondilar"] },
+            { question: "7. Nome do acidente ósseo 26?", answer: ["Côndilo Lateral do Fêmur"] },
+            { question: "8. Nome do acidente ósseo 27?", answer: ["Côndilo Medial do Fêmur"] },
+            { question: "9. Nome do acidente ósseo 28?", answer: ["Fossa Intercondilar"] },
+            { question: "10. Nome do acidente ósseo 29?", answer: ["Epicôndilo Lateral do Fêmur"] },
+            { question: "11. Nome do acidente ósseo 30?", answer: ["Epicôndilo Medial do Fêmur"] },
+            { question: "12. Nome do acidente ósseo 31?", answer: ["Tróclea do Fêmur"] }
         ]
     }
     
