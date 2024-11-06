@@ -3,7 +3,7 @@ body {
     background-color: #868686;
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: #000000;
 }
 
 .quiz-container {
@@ -23,7 +23,7 @@ body {
 
 h1, h2 {
     font-size: 28px; /* Aumenta o tamanho da fonte para o título */
-    color: #4a4a4a;
+    color: #000000;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -94,13 +94,18 @@ label {
     margin-bottom: 5px;
 }
 
+input[type="text"]::placeholder {
+    color: #000000; /* Define a cor do placeholder como preto */
+    opacity: 1; /* Garante que o placeholder fique completamente opaco */
+}
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #999;
-    background-color: #D3D3D3;
-    color: #333;
+    border: 1px solid #000000;
+    background-color: #d3d3d3;
+    color: #000000;
     box-sizing: border-box;
 }
 
@@ -114,7 +119,7 @@ input[type="text"] {
 #result {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #000000;
 }
 
 @media (max-width: 600px) {

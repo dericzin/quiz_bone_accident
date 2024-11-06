@@ -226,7 +226,51 @@ const quizzes = {
             { question: "12. Nome do acidente ósseo 40?", answer: ["Processo Estilóideo Medial"] },
             { question: "13. Nome do acidente ósseo 41?", answer: ["Processo Estilóideo Lateral"] }
         ]
+    },
+    osso12: {
+        name: "Vértebras Cervicais C3-C7.", // Nome do osso
+        image: "vertebras_cervicais_c3_c7.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 18?", answer: ["Forame Vertebral"] },
+            { question: "2. Nome do acidente ósseo 19?", answer: ["Processo Articular Cranial"] },
+            { question: "3. Nome do acidente ósseo 20?", answer: ["Processo Articular Caudal"] },
+            { question: "4. Nome do acidente ósseo 21?", answer: ["Corpo Vertebral"] },
+            { question: "5. Nome do acidente ósseo 22?", answer: ["Processo Espinhoso"] },
+            { question: "6. Nome do acidente ósseo 23?", answer: ["Processo Transverso"] },
+            { question: "7. Nome do acidente ósseo 24?", answer: ["Forame (Canal) Transverso", "Forame Canal Transverso"] }
+        ]
+    },
+    osso13: {
+        name: "Vértebra Torácica.", // Nome do osso
+        image: "vertebra_toracica.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 25?", answer: ["Forame Vertebral"] },
+            { question: "2. Nome do acidente ósseo 26?", answer: ["Processo Articular Cranial"] },
+            { question: "3. Nome do acidente ósseo 27?", answer: ["Processo Articular Caudal"] },
+            { question: "4. Nome do acidente ósseo 28?", answer: ["Corpo Vertebral"] },
+            { question: "5. Nome do acidente ósseo 29?", answer: ["Processo Espinhoso"] },
+            { question: "6. Nome do acidente ósseo 30?", answer: ["Processo Transverso"] },
+            { question: "7. Nome do acidente ósseo 31?", answer: ["Fóvea Costal do Processo Transverso"] },
+            { question: "8. Nome do acidente ósseo 32?", answer: ["Fóvea Costal Caudal"] },
+            { question: "9. Nome do acidente ósseo 33?", answer: ["Fóvea Costal Cranial"] },
+            { question: "10. Nome do acidente ósseo 34?", answer: ["Processo Mamilar"] }
+        ]
+    },
+    osso14: {
+        name: "Vértebra Lombar", // Nome do osso
+        image: "vertebra_lombar.png", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 35?", answer: ["Forame Vertebral"] },
+            { question: "2. Nome do acidente ósseo 36?", answer: ["Processo Articular Cranial"] },
+            { question: "3. Nome do acidente ósseo 37?", answer: ["Processo Articular Caudal"] },
+            { question: "4. Nome do acidente ósseo 38?", answer: ["Corpo Vertebral"] },
+            { question: "5. Nome do acidente ósseo 39?", answer: ["Processo Espinhoso"] },
+            { question: "6. Nome do acidente ósseo 40?", answer: ["Processo Transverso"] },
+            { question: "7. Nome do acidente ósseo 41?", answer: ["Processo Mamilar"] },
+            { question: "8. Nome do acidente ósseo 42?", answer: ["Face Articular para Asa do Sacro (L6)"] }
+        ]
     }
+    
     
 };
 
@@ -251,7 +295,7 @@ function startQuiz() {
             const questionDiv = document.createElement("div");
             questionDiv.innerHTML = `
                 <label for="answer${index + 1}">${q.question}</label>
-                <input type="text" id="answer${index + 1}" placeholder="Digite sua resposta">
+                <input type="text" autocomplete="off" id="answer${index + 1}" placeholder="Digite sua resposta">
             `;
             questionsDiv.appendChild(questionDiv);
         });
