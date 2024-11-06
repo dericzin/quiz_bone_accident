@@ -267,7 +267,7 @@ const quizzes = {
             { question: "5. Nome do acidente ósseo 39?", answer: ["Processo Espinhoso"] },
             { question: "6. Nome do acidente ósseo 40?", answer: ["Processo Transverso"] },
             { question: "7. Nome do acidente ósseo 41?", answer: ["Processo Mamilar"] },
-            { question: "8. Nome do acidente ósseo 42?", answer: ["Face Articular para Asa do Sacro (L6)"] }
+            { question: "8. Nome do acidente ósseo 42?", answer: ["Face Articular para Asa do Sacro (L6)", "Face Articular para Asa do Sacro L6"] }
         ]
     },
     osso15: {
@@ -324,7 +324,7 @@ function startQuiz() {
 function checkAnswers() {
     const selectedBone = document.getElementById("bone-select").value;
     const correctAnswers = quizzes[selectedBone].questions.map(q => 
-        q.answer.map(answer => normalizeString(answer))
+        Array.isArray(q.answer) ? q.answer.map(answer => normalizeString(answer)) : [normalizeString(q.answer)]
     );
 
     const userAnswers = [];
@@ -346,6 +346,15 @@ function checkAnswers() {
 
     resultMessage += `</ul><strong>Você acertou ${score} de ${correctAnswers.length} perguntas!</strong>`;
     document.getElementById("result").innerHTML = resultMessage;
+
+    // Verifica se todas as respostas estão corretas
+    if (score === correctAnswers.length) {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    }
 
     // Ocultar o botão "Enviar Respostas" após mostrar o resultado
     document.getElementById("submit-button").style.display = "none";
