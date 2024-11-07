@@ -287,7 +287,26 @@ const quizzes = {
             { question: "11. Nome do acidente ósseo 30?", answer: ["Epicôndilo Medial do Fêmur"] },
             { question: "12. Nome do acidente ósseo 31?", answer: ["Tróclea do Fêmur"] }
         ]
+    },
+    osso16: {
+        name: "Tíbia e Fíbula", // Nome do osso
+        image: "tibia_fibula.jpeg", // Substitua com a imagem correta
+        questions: [
+            { question: "1. Nome do acidente ósseo 32?", answer: ["Côndilo Lateral da Tíbia"] },
+            { question: "2. Nome do acidente ósseo 33?", answer: ["Côndilo Medial da Tíbia"] },
+            { question: "3. Nome do acidente ósseo 34?", answer: ["Eminência Intercondilar"] },
+            { question: "4. Nome do acidente ósseo 35?", answer: ["Tuberosidade da Tíbia"] },
+            { question: "5. Nome do acidente ósseo 36?", answer: ["Sulco da Tuberosidade da Tíbia"] },
+            { question: "6. Nome do acidente ósseo 37?", answer: ["Corpo da Fíbula"] },
+            { question: "7. Nome do acidente ósseo 38?", answer: ["Corpo da Tíbia"] },
+            { question: "8. Nome do acidente ósseo 39?", answer: ["Espaço Interósseo"] },
+            { question: "9. Nome do acidente ósseo 40?", answer: ["Maléolo Lateral"] },
+            { question: "10. Nome do acidente ósseo 41?", answer: ["Maléolo Medial"] },
+            { question: "11. Nome do acidente ósseo 42?", answer: ["Cóclea da Tíbia"] },
+            { question: "11. Nome do acidente ósseo 43?", answer: ["Linha Muscular"] }
+        ]
     }
+    
     
     
     
