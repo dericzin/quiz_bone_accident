@@ -27,6 +27,8 @@
             <option value="osso14">Vértebra Lombar.</option>
             <option value="osso15">Fêmur.</option>
             <option value="osso16">Tíbia e Fíbula.</option>
+            <option value="osso17">Classificação anatômica.</option>
+            <option value="osso18">Classificação anatômica 2.</option>
         </select>
         <button onclick="startQuiz()">Iniciar Quiz</button>
     </div>
@@ -47,5 +49,13 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
-</body>
+    <script>
+        // Previne a rolagem ao focar no input
+        document.addEventListener('focusin', (event) => {
+            if (event.target.tagName === 'INPUT' && event.target.type === 'text') {
+                event.target.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+                window.scrollTo(0, 0); // Mantém a página no topo
+            }
+        });
+    </script>
 </html>

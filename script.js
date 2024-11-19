@@ -305,6 +305,24 @@ const quizzes = {
             { question: "11. Nome do acidente ósseo 42?", answer: ["Cóclea da Tíbia"] },
             { question: "11. Nome do acidente ósseo 43?", answer: ["Linha Muscular"] }
         ]
+    },
+    osso17:{
+        name: "Classificação Anatômica",
+        image: "classificacao_anatomica.jpeg",
+        questions:[
+            {question: "1. Qual a classificação anatômica do alfinete vermelho?", answer: ["Lábio articular"]},
+            {question: "2. Qual a classificação anatômica do alfinete branco?", answer: ["Cartilagem Articular"]},
+            {question: "3. Qual a classificação anatômica do alfinete verde?", answer: ["Cápsula articular"]},
+            {question: "4. Qual a classificação anatômica da pinça?", answer: ["Lábio articular"]}
+        ]
+    },
+    osso18:{
+        name: "Classificação Anatômica 2",
+        image: "classificacao_anatomica2.jpeg",
+        questions:[
+            {question: "1. Qual a classificação anatômica do alfinete Branco?", answer: ["Ligamento Articular"]},
+            {question: "2. Qual a classificação anatômica do alfinete Preto?", answer: ["Cartilagem Articular"]},
+        ]
     }
     
     
