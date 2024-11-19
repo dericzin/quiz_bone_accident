@@ -313,7 +313,7 @@ const quizzes = {
             {question: "1. Qual a classificação anatômica do alfinete vermelho?", answer: ["Lábio articular"]},
             {question: "2. Qual a classificação anatômica do alfinete branco?", answer: ["Cartilagem Articular"]},
             {question: "3. Qual a classificação anatômica do alfinete verde?", answer: ["Cápsula articular"]},
-            {question: "4. Qual a classificação anatômica da pinça?", answer: ["Lábio articular"]}
+            {question: "4. Qual a classificação anatômica da pinça?", answer: ["Cavidade articular"]}
         ]
     },
     osso18:{
