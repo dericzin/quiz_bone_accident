@@ -323,8 +323,30 @@ const quizzes = {
             {question: "1. Qual a classificação anatômica do alfinete Branco?", answer: ["Ligamento Articular"]},
             {question: "2. Qual a classificação anatômica do alfinete Preto?", answer: ["Cartilagem Articular"]},
         ]
-    }
-    
+    },
+    osso19:{
+        name: "Sacro Ventral",
+        image: "sacro_ventral.jpeg",
+        questions:[
+            { question: "1. Nome do acidente ósseo 43?", answer: ["Asa do Sacro"] },
+            { question: "2. Nome do acidente ósseo 44?", answer: ["Face articular para o processo transverso da ultima vértebra lombar"] },
+            { question: "3. Nome do acidente ósseo 45?", answer: ["Face articular do sacro"] },
+            { question: "4. Nome do acidente ósseo 46?", answer: ["Face articular do corpo do sacro"]},
+            { question: "5. Nome do acidente ósseo 47?", answer: ["Promontório"] },
+            { question: "6. Nome do acidente ósseo 49?", answer: ["Forames sacrais ventrais"] },
+            { question: "7. Nome do acidente ósseo 51?", answer: ["Crista sacral lateral"] }
+        ]
+    },
+    osso20:{
+        name: "Sacro Dorsolateral",
+        image: "sacro_dorsolateral.jpeg",
+        questions:[
+            { question: "3. Nome do acidente ósseo 45?", answer: ["Face articular do sacro"] },
+            { question: "4. Nome do acidente ósseo 48?", answer: ["Forames sacrais dorsais"]},
+            { question: "7. Nome do acidente ósseo 51?", answer: ["Crista sacral lateral"] },
+            { question: "7. Nome do acidente ósseo 52?", answer: ["Crista sacral mediana", "Processo transverso"] },
+        ]
+    }    
     
     
     
