@@ -325,28 +325,22 @@ const quizzes = {
         ]
     },
     osso19:{
-        name: "Sacro Ventral",
-        image: "sacro_ventral.jpeg",
+        name: "Sacro",
+        image: "sacro.jpeg",
         questions:[
             { question: "1. Nome do acidente ósseo 43?", answer: ["Asa do Sacro"] },
             { question: "2. Nome do acidente ósseo 44?", answer: ["Face articular para o processo transverso da ultima vértebra lombar"] },
             { question: "3. Nome do acidente ósseo 45?", answer: ["Face articular do sacro"] },
             { question: "4. Nome do acidente ósseo 46?", answer: ["Face articular do corpo do sacro"]},
             { question: "5. Nome do acidente ósseo 47?", answer: ["Promontório"] },
-            { question: "6. Nome do acidente ósseo 49?", answer: ["Forames sacrais ventrais"] },
-            { question: "7. Nome do acidente ósseo 51?", answer: ["Crista sacral lateral"] }
+            { question: "6. Nome do acidente ósseo 48?", answer: ["Forames sacrais dorsais"]},
+            { question: "7. Nome do acidente ósseo 49?", answer: ["Forames sacrais ventrais"] },
+            { question: "8. Nome do acidente ósseo 51?", answer: ["Crista sacral lateral"] },
+            { question: "9. Nome do acidente ósseo 52?", answer: ["Crista sacral mediana", "Processo transverso"] }
         ]
-    },
-    osso20:{
-        name: "Sacro Dorsolateral",
-        image: "sacro_dorsolateral.jpeg",
-        questions:[
-            { question: "3. Nome do acidente ósseo 45?", answer: ["Face articular do sacro"] },
-            { question: "4. Nome do acidente ósseo 48?", answer: ["Forames sacrais dorsais"]},
-            { question: "7. Nome do acidente ósseo 51?", answer: ["Crista sacral lateral"] },
-            { question: "7. Nome do acidente ósseo 52?", answer: ["Crista sacral mediana", "Processo transverso"] },
-        ]
-    }    
+    }
+
+    
     
     
     
