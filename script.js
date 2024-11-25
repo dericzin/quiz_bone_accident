@@ -48,7 +48,7 @@ const quizzes = {
             { question: "18. Nome do acidente ósseo 55?", answer: ["Processo Paracondilar do Occipital"] }
         ]
     },
-    
+
     osso3: {
         name: "Crânio Equino - Dorsal", // Nome do osso
         image: "cranio_equino_dorsal.png", // Substitua com a imagem correta
@@ -105,7 +105,7 @@ const quizzes = {
             { question: "32. Nome do acidente ósseo 58?", answer: ["Canal do Nervo Hipoglosso"] }
         ]
     },
-    
+
     osso5: {
         name: "Ossos do crânio Eq. Lat.", // Nome do osso
         image: "cranio_bovino_lateral.png", // Substitua com a imagem correta
@@ -178,7 +178,7 @@ const quizzes = {
             { question: "17. Nome do acidente ósseo 28?", answer: ["Epicôndilo Lateral do Úmero"] }
         ]
     },
-    
+
     osso9: {
         name: "Atlas (C1) Equino.",
         image: "atlas_c1_equino.png",
@@ -275,9 +275,9 @@ const quizzes = {
         image: "femur.png", // Substitua com a imagem correta
         questions: [
             { question: "1. Nome do acidente ósseo 20?", answer: ["Cabeça do Fêmur"] },
-            { question: "2. Nome do acidente ósseo 21?", answer: ["Fóvea do Fêmur"]},
+            { question: "2. Nome do acidente ósseo 21?", answer: ["Fóvea do Fêmur"] },
             { question: "3. Nome do acidente ósseo 22?", answer: ["Trocânter Maior"] },
-            { question: "4. Nome do acidente ósseo 23?", answer: ["Trocânter Menor" ]},
+            { question: "4. Nome do acidente ósseo 23?", answer: ["Trocânter Menor"] },
             { question: "5. Nome do acidente ósseo 24?", answer: ["Terceiro Trocânter"] },
             { question: "6. Nome do acidente ósseo 25?", answer: ["Fossa Supracondilar"] },
             { question: "7. Nome do acidente ósseo 26?", answer: ["Côndilo Lateral do Fêmur"] },
@@ -306,44 +306,65 @@ const quizzes = {
             { question: "11. Nome do acidente ósseo 43?", answer: ["Linha Muscular"] }
         ]
     },
-    osso17:{
+    osso17: {
         name: "Classificação Anatômica",
         image: "classificacao_anatomica.jpeg",
-        questions:[
-            {question: "1. Qual a classificação anatômica do alfinete vermelho?", answer: ["Lábio articular"]},
-            {question: "2. Qual a classificação anatômica do alfinete branco?", answer: ["Cartilagem Articular"]},
-            {question: "3. Qual a classificação anatômica do alfinete verde?", answer: ["Cápsula articular"]},
-            {question: "4. Qual a classificação anatômica da pinça?", answer: ["Cavidade articular"]}
+        questions: [
+            { question: "1. Qual a classificação anatômica do alfinete vermelho?", answer: ["Lábio articular"] },
+            { question: "2. Qual a classificação anatômica do alfinete branco?", answer: ["Cartilagem Articular"] },
+            { question: "3. Qual a classificação anatômica do alfinete verde?", answer: ["Cápsula articular"] },
+            { question: "4. Qual a classificação anatômica da pinça?", answer: ["Cavidade articular"] }
         ]
     },
-    osso18:{
+    osso18: {
         name: "Classificação Anatômica 2",
         image: "classificacao_anatomica2.jpeg",
-        questions:[
-            {question: "1. Qual a classificação anatômica do alfinete Branco?", answer: ["Ligamento Articular"]},
-            {question: "2. Qual a classificação anatômica do alfinete Preto?", answer: ["Cartilagem Articular"]},
+        questions: [
+            { question: "1. Qual a classificação anatômica do alfinete Branco?", answer: ["Ligamento Articular"] },
+            { question: "2. Qual a classificação anatômica do alfinete Preto?", answer: ["Cartilagem Articular"] },
         ]
     },
-    osso19:{
+    osso19: {
         name: "Sacro",
         image: "sacro.jpeg",
-        questions:[
+        questions: [
             { question: "1. Nome do acidente ósseo 43?", answer: ["Asa do Sacro"] },
             { question: "2. Nome do acidente ósseo 44?", answer: ["Face articular para o processo transverso da ultima vértebra lombar"] },
             { question: "3. Nome do acidente ósseo 45?", answer: ["Face articular do sacro"] },
-            { question: "4. Nome do acidente ósseo 46?", answer: ["Face articular do corpo do sacro"]},
+            { question: "4. Nome do acidente ósseo 46?", answer: ["Face articular do corpo do sacro"] },
             { question: "5. Nome do acidente ósseo 47?", answer: ["Promontório"] },
-            { question: "6. Nome do acidente ósseo 48?", answer: ["Forames sacrais dorsais"]},
+            { question: "6. Nome do acidente ósseo 48?", answer: ["Forames sacrais dorsais"] },
             { question: "7. Nome do acidente ósseo 49?", answer: ["Forames sacrais ventrais"] },
             { question: "8. Nome do acidente ósseo 51?", answer: ["Crista sacral lateral"] },
             { question: "9. Nome do acidente ósseo 52?", answer: ["Crista sacral mediana", "Processo transverso"] }
         ]
+    },
+    osso20: {
+        name: "Costela e Esterno",
+        image: "costela_esterno.jpeg",
+        questions: [
+            { question: "1. Nome do acidente ósseo 53?", answer: ["Cabeça da Costela"] },
+            { question: "2. Nome do acidente ósseo 54?", answer: ["Colo da Costela"] },
+            { question: "3. Nome do acidente ósseo 55?", answer: ["Tubérculo da Costela"] },
+            { question: "4. Nome do acidente ósseo 56?", answer: ["Corpo da Costela"] },
+            { question: "5. Nome do acidente ósseo 57?", answer: ["Cartilagem Costal"] },
+            { question: "6. Nome do acidente ósseo 58?", answer: ["Junção Costocondral"] },
+            { question: "7. Nome do acidente ósseo 59?", answer: ["Corpo do Esterno"] },
+            { question: "8. Nome do acidente ósseo 60?", answer: ["Manúbrio do Esterno"] },
+            { question: "9. Nome do acidente ósseo 61?", answer: ["Estérnebras"] },
+            { question: "10. Nome do acidente ósseo 62?", answer: ["Processo Xifoide"] },
+            { question: "11. Nome do acidente ósseo 63?", answer: ["Cartilagem Xifoide"] },
+            { question: "12. Nome do acidente ósseo 64?", answer: ["Cartilagem Costal"] },
+            { question: "13. Nome do acidente ósseo 65?", answer: ["Junção Costocondral"] },
+            { question: "14. Nome do acidente ósseo 66?", answer: ["Junção Condroesternal"] },
+            { question: "15. Nome do acidente ósseo 67?", answer: ["Junção Condrocondral"] }
+        ]
     }
 
-    
-    
-    
-    
+
+
+
+
 };
 
 function normalizeString(str) {
@@ -376,7 +397,7 @@ function startQuiz() {
 
 function checkAnswers() {
     const selectedBone = document.getElementById("bone-select").value;
-    const correctAnswers = quizzes[selectedBone].questions.map(q => 
+    const correctAnswers = quizzes[selectedBone].questions.map(q =>
         Array.isArray(q.answer) ? q.answer.map(answer => normalizeString(answer)) : [normalizeString(q.answer)]
     );
 
